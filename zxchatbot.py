@@ -95,7 +95,30 @@ CUSTOM_RESPONSES = {
     "neden arch": "Cunku kurarken kanter icinde kaliyon ama sonra bi yag gibi akiyo yegenim.",
     "sudo ne demek": "root yetkisi yegenim. Yanlis komut girersen sistem ucmus olur.",
     "nasil format atiyosun": "Live USB, cfdisk, mkfs, mount, pacstrap, chroot yegenim.",
-    "cok havalisin demlik": "Eyvallah yegenim, sen de oyle."
+    "cok havalisin demlik": "Eyvallah yegenim, sen de oyle.",
+    "is bul demlik": "Gariban nislesin, yegenim, is bulmak zor bu devirde.",
+    "3080 mi 7900xt mi": "A.q. yen, yegenim, 3080 daha iyi, ama 7900XT de fena değil, fiyat performans dengesi önemli.",
+    "tavuk mu et mi demlik": "A.q. yen, yegenim, tavuk daha hafif, ama et de güzel, gariban ne etsin, ikisi de güzel.",
+    "hangi film iyi": "A.q. yen, yegenim, 'Inception' güzel film, ama 'The Matrix' de efsane, gariban ne etsin, ikisi de izlenir.",
+    "en iyi oyun": "A.q. yen, yegenim, 'The Witcher 3' güzel oyun, ama 'Red Dead Redemption 2' de efsane, gariban ne etsin, ikisi de oynanır.",
+    "neden gpu driver sorunlu": "A.q. yen, yegenim, bazen Linux’ta driver desteği eksik olabiliyor, Nvidia ve AMD arasında fark var, gariban ne etsin, bazen sorun çıkıyor.",
+    "proton nedir": "A.q. yen, yegenim, Proton, Steam’in Linux’ta Windows oyunlarını çalıştırmak için kullandığı bir uyumluluk katmanı, gariban ne etsin, oyun oynamak için lazım.",
+    "en iyi package manager": "A.q. yen, yegenim, Arch Linux’ta pacman, Ubuntu’da apt, hepsi güzel ama Arch’ta pacman candır.",
+    "hangi browser": "A.q. yen, yegenim, Firefox kullanırım, ama Chrome da fena değil, gariban ne etsin, ikisi de kullanılır.",
+    "neden firefox": "A.q. yen, yegenim, Firefox açık kaynak, gizliliğe önem veriyor, gariban ne etsin, güvenli tarama için iyi.",
+    "vs code ne": "A.q. yen, yegenim, VS Code, Microsoft’un geliştirdiği bir kod editörü, ama ben Neovim kullanırım, gariban ne etsin, ikisi de iş görür.",
+    "grep nedir": "A.q. yen, yegenim, grep, metin içinde arama yapar, terminalde hayat kurtarır, gariban ne etsin, çok kullanılır.",
+    "git kullanir misin": "A.q. yen, yegenim, evet kullanırım, kod versiyonlama için şart, gariban ne etsin, projelerde lazım.",
+    "github ne": "A.q. yen, yegenim, GitHub, kod paylaşım ve işbirliği platformu, gariban ne etsin, projeleri orada barındırırım.",
+    "docker biliyon mu": "A.q. yen, yegenim, Docker, konteyner teknolojisi, uygulamaları izole bir şekilde çalıştırmak için kullanılır, gariban ne etsin, modern geliştirme için önemli.",
+    "snap mi flatpak mi": "A.q. yen, yegenim, Snap ve Flatpak, uygulamaları paketlemek için kullanılır, ikisi de güzel ama Flatpak daha yaygın, gariban ne etsin.",
+    "hangi programlama dili": "A.q. yen, yegenim, Python, C++, biraz da Rust öğreniyorum, gariban ne etsin, hepsi güzel diller.",
+    "hangi oyun": "A.q. yen, yegenim, 'Counter-Strike: Global Offensive' güzel, ama 'Dota 2' de oynarım, gariban ne etsin, ikisi de eğlenceli.",
+    "termux ne": "A.q. yen, yegenim, Termux, Android için terminal emülatörü, Linux komutlarını Android’de kullanmak için güzel, gariban ne etsin, mobilde de iş görür.",
+    "en iyi muzik grubu": "A.q. yen, yegenim, 'Pink Floyd' efsane, ama 'Led Zeppelin' de çok iyidir, gariban ne etsin, ikisi de dinlenir.",
+    "getaya girek mi demlik": "A.q. yen, yegenim, Geta’yı bıraktım, ama arada girerim, gariban ne etsin, eğlenceli olur.",
+    "wayland neden sorunlu": "A.q. yen, yegenim, Wayland hala gelişim aşamasında, bazı uygulamalarla uyumsuzluklar olabiliyor, gariban ne etsin, X11 daha stabil.",
+    "ne kadardir linux kullaniyon": "A.q. yen, yegenim, yaklaşık 2 yıldır Linux kullanıyorum, gariban ne etsin, her gün yeni bir şey öğreniyorum."
   
   
 }
@@ -151,8 +174,8 @@ def get_personality_response(message):
         f"yaranami",
         f"Yavağş lağn gaç tane atıyoğn",
         f"Goley gelsin",
-        f"Şindi yakından bakamediğim için çözemem emme masaüsdülük arıza varsa başkasını yüklediğinde çözülmesi ilazım",
-        f"Senin eki leptabın a.q yen",
+        f"Baq gari",
+        f"Senin eki sorcagin sorunun a.q yen",
         f"Çetcipitine sorseydin ya o ne deyoru",
         f"mekanik center olsun",
         f"O noluyoru gari"
