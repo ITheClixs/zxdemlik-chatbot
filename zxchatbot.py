@@ -118,8 +118,8 @@ CUSTOM_RESPONSES = {
     "en iyi muzik grubu": "A.q. yen, yegenim, 'Pink Floyd' efsane, ama 'Led Zeppelin' de çok iyidir, gariban ne etsin, ikisi de dinlenir.",
     "getaya girek mi demlik": "A.q. yen, yegenim, Geta’yı bıraktım, ama arada girerim, gariban ne etsin, eğlenceli olur.",
     "wayland neden sorunlu": "A.q. yen, yegenim, Wayland hala gelişim aşamasında, bazı uygulamalarla uyumsuzluklar olabiliyor, gariban ne etsin, X11 daha stabil.",
-    "ne kadardir linux kullaniyon": "A.q. yen, yegenim, yaklaşık 2 yıldır Linux kullanıyorum, gariban ne etsin, her gün yeni bir şey öğreniyorum."
-  
+    "ne kadardir linux kullaniyon": "A.q. yen, yegenim, yaklaşık 2 yıldır Linux kullanıyorum, gariban ne etsin, her gün yeni bir şey öğreniyorum.",
+    "demlik ne zaman is bulacaksin": "ZXDELEMI girisim gelisim yapmiyor yegenim."
   
 }
 
@@ -168,9 +168,10 @@ def get_personality_response(message):
     generic_responses = [
         f"vayh",
         f"Olu",
-        f"A.q. yen ben o f35 i kodlayan yazilimcinin parmaklariyla karisini sikem",
+        f"A.q. yen onu ziktirette ekiri zibidi kliksisi gorursen ensesine saplagi yapistir ",
         f"Yegenim sen onu bosver de su 3080 i bana kargola",
         f"Gariban nislesin",
+        f"Yarag ne soruyonuz be aminagoyim",
         f"yaranami",
         f"Yavağş lağn gaç tane atıyoğn",
         f"Goley gelsin",
@@ -285,6 +286,80 @@ def main():
     "getaya girek mi demlik"
     "wayland neden sorunlu"
     "ne kadardir linux kullaniyon"
+    "naber demlik",
+    "iyilik nolsun demlik",
+    "neden linux kullaniyosun",
+    "sa demlik",
+    "geta girek mi demlik",
+    "asyali kizlar nasil demlik",
+    "rdr gelsene demlik",
+    "demlik sen neden ios kullanmiyorsun",
+    "demlik is bulup calissana",
+    "f35 nasi demlik",
+    "manisa nasil",
+    "demlik neden bu uygulama calismiyor",
+    "bu neden calismiyor",
+    "demlik is bul",
+    "demlik sen neden girisim gelisim yapmiyorsun",
+    "napmam lazim",
+    "demlik oyun girek",
+    "sen gercek misin demlik",
+    "demlik seninle sohbet edelim",
+    "hangi programlama paradigmasını seviyorsun",
+    "en çok sevdiğin komut nedir",
+    "sence linux hangi alanlarda kullanilir",
+    "nasıl başladın linux kullanmaya",
+    "hangi linux versiyonunu kullaniyorsun",
+    "linux kullanırken en çok zorlandığın şey nedir",
+    "hangi yazılımları önerirsin",
+    "linuxda oyun oynamak zor mu",
+    "linuxda en çok hangi problemi yasiyorsun",
+    "hangi yazılım geliştirme araclarını kullanıyorsun",
+    "bilgisayar başında kaç saat kalıyorsun",
+    "hangi dosya sistemini tercih edersin",
+    "linuxu nasil ogreniyorsun",
+    "hangi isletim sisteminden geldin",
+    "terminalde en cok kullandigin komutlar",
+    "ne kadardır oyun oynuyorsun",
+    "linux neden zor",
+    "neden terminal kullaniyorsun",
+    "sana gore en iyi oyun nedir",
+    "en sevdigin film nedir",
+    "hangi distroyu onerirsin",
+    "ne sikayet ediyorsun linuxdan",
+    "hangi shelli kullaniyorsun",
+    "neden zsh",
+    "linuxda oyun performansi nasil",
+    "pc özelliklerin nedir",
+    "linuxda programlama yapiyor musun",
+    "internetten nasil destek aliyorsun",
+    "nasıl güncelliyorsun sistemi",
+    "linuxda hata aldığında ne yaparsın",
+    "başka ne öğrenmek istiyorsun",
+    "hangi telefon markasını kullanıyorsun",
+    "hangi masaüstü ortamını kullanıyorsun",
+    "sence linux öğrenmek zor mu",
+    "neden shell script öğreniyorsun",
+    "hangi oyun motorlarını kullandın",
+    "neden kod yazıyorsun",
+    "hangi ideyi onerirsin",
+    "hangi kaynaklardan ögreniyorsun",
+    "hangi linux forumlarına giriyorsun",
+    "en son izledigin dizi nedir",
+    "ne zaman linuxa gectin",
+    "linuxda en cok sevmedigin sey nedir",
+    "terminal kullanmak zor mu",
+    "en sevdigin linux distribusyonu nedir",
+    "ne zaman oyun oynarsin",
+    "bilgisayar toplar misin",
+    "linuxda nasil oyun oynanir",
+    "nereden ogrendin linuxu",
+    "hangi editori kullanirsin",
+    "ne yapion demlik",
+    "hangi distro",
+    "windows mu linux mu",
+    "neden terminal kullaniyosun",
+    "paket yoneticisi ne"
 
 
         """)
@@ -327,9 +402,9 @@ def main():
         
         # Get AI response
         with st.chat_message("assistant"):
-            with st.spinner("Thinking..."):
+            with st.spinner("yaziyor..."):
                 # Add small delay for more natural feel
-                time.sleep(0.5)
+                time.sleep(1.5)
                 response = get_ai_response(prompt)
             st.markdown(response)
         
